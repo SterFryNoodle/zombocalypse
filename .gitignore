@@ -71,3 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Starter Assets/Runtime/ThirdPersonController/
+Assets/Imported Assets/Starter Assets/Runtime/ThirdPersonController/
+Assets/Imported Assets/Starter Assets/TutorialInfo/Scripts/Readme.cs
+Assets/Imported Assets/Starter Assets/TutorialInfo/
