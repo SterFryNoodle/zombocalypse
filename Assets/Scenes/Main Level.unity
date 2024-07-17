@@ -2434,6 +2434,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9100571728040813455, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 9100571728040813455, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
+        type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
@@ -2450,6 +2456,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 591362189897162338, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 591362189897162343, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247077948012324526, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878656059950844984, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6485612983437287318, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_Name
