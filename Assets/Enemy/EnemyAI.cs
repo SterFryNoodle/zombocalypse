@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
         SetEnemyRange();
     }
 
-    private void SetEnemyRange()
+    void SetEnemyRange()
     {
         distanceToTarget = Vector3.Distance(enemyTarget.position, transform.position); //Set variable to distance between player & enemy.
 
@@ -29,5 +29,11 @@ public class EnemyAI : MonoBehaviour
         {
             agent.SetDestination(enemyTarget.position);
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
