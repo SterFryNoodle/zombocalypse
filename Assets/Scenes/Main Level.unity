@@ -2379,6 +2379,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6154917555950462915, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
         type: 3}
+      propertyPath: chaseRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154917555950462915, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
+        type: 3}
       propertyPath: enemyTarget
       value: 
       objectReference: {fileID: 2103738992}
