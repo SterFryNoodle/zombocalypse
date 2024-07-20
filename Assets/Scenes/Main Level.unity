@@ -2377,6 +2377,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 876102229926079605, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6154917555950462915, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
         type: 3}
       propertyPath: chaseRange
@@ -2390,7 +2395,7 @@ PrefabInstance:
     - target: {fileID: 8576813623886921643, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.34
+      value: 20.99
       objectReference: {fileID: 0}
     - target: {fileID: 8576813623886921643, guid: c48a73fefe6506a46ba7b4dfd5f4ee0c,
         type: 3}
