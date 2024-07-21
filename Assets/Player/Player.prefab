@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 8702883301729224009}
   - component: {fileID: 2384139056011455258}
   - component: {fileID: 3920518260311385247}
+  - component: {fileID: 8478073395740812311}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1094,3 +1095,17 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &8478073395740812311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a452c38466ee8844db22d33f292e19cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 6906823239926295185}
+  maxDistance: 100
