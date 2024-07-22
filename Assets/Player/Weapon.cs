@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour
 
             target = hit.transform.GetComponent<EnemyHealth>(); //Getting the collider of what was hit and accessing the EnemyHealth if it holds that script.            
             
-            if (target != null) //Check if target being hit is able to take damage.
+            if (target == null) //Check if target being hit is able to take damage.
             {
                 return;
             }
