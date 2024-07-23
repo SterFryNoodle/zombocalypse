@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitFX;
 
     EnemyHealth target;
+    float bulletImpactLength = .5f;
     void Update()
     {        
         if (Input.GetButtonDown("Fire1"))
@@ -58,6 +59,6 @@ public class Weapon : MonoBehaviour
     void CreateBulletImpact(RaycastHit bullet)
     {
         GameObject impactPt = Instantiate(hitFX, bullet.point, Quaternion.LookRotation(bullet.normal)); //Instantiate impact fx and have the rotation translated towards the normals of object it is on.
-        Destroy(impactPt, 1);
+        Destroy(impactPt, bulletImpactLength);
     }
 }
