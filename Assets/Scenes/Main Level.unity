@@ -2468,6 +2468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 938641807555125511, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 938641807555125511, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 15
       objectReference: {fileID: 0}
@@ -2476,6 +2481,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.129
       objectReference: {fileID: 0}
+    - target: {fileID: 4010247162871563629, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: hitFX
+      value: 
+      objectReference: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55,
+        type: 3}
     - target: {fileID: 4010247162871563629, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: muzzleFlash
