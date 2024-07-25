@@ -25,14 +25,14 @@ public class EnemyAI : MonoBehaviour
     void SetEnemyRange()
     {
         distanceToTarget = Vector3.Distance(enemyTarget.position, transform.position); //Set variable to distance between player & enemy.
-
+        
         if (isProvoked)
-        {
+        {            
             EngageTarget();
         }
         else if (distanceToTarget <= chaseRange)
         {
-            isProvoked = true;            
+            isProvoked = true;
         }
     }
 
@@ -44,7 +44,7 @@ public class EnemyAI : MonoBehaviour
 
     void EngageTarget()
     {        
-        if (distanceToTarget >= agent.stoppingDistance)
+        if (distanceToTarget > agent.stoppingDistance)
         {
             ChaseTarget();
         }
@@ -56,12 +56,15 @@ public class EnemyAI : MonoBehaviour
     }
 
     void ChaseTarget()
-    {
+    {        
+        GetComponent<Animator>().SetBool("Attack", false);
+        GetComponent<Animator>().SetTrigger("Walk");
         agent.SetDestination(enemyTarget.position);
     }
 
     void AttackTarget()
-    {
+    {        
+        GetComponent<Animator>().SetBool("Attack", true);
         Debug.Log("Enemy has attacked.");
     }
 }
