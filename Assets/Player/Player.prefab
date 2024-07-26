@@ -1133,6 +1133,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
+      propertyPath: LightsModule.light
+      value: 
+      objectReference: {fileID: 7739644118644625622, guid: 0fc9bd9c7f3e73b4a80537f189075ddc,
+        type: 3}
+    - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
+        type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
+        type: 3}
       propertyPath: ShapeModule.radius.value
       value: 0.003
       objectReference: {fileID: 0}
@@ -1149,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 15
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}

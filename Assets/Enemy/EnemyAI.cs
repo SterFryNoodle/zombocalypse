@@ -63,7 +63,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     void AttackTarget()
-    {        
+    {
         GetComponent<Animator>().SetBool("Attack", true);
         Debug.Log("Enemy has attacked.");
     }

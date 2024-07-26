@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 876102229926079605}
   - component: {fileID: 6154917555950462915}
   - component: {fileID: 1384034214936290384}
+  - component: {fileID: 1824506392959575557}
   - component: {fileID: 192069218025189213}
   m_Layer: 0
   m_Name: Enemy
@@ -249,7 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c09320748363f744592fba83559c2212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyTarget: {fileID: 0}
+  enemyTarget: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    type: 3}
   chaseRange: 15
 --- !u!114 &1384034214936290384
 MonoBehaviour:
@@ -264,6 +266,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!114 &1824506392959575557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100571728040813455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095241b6d8b535040a28d7b0d9aafba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetStrike: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    type: 3}
+  damageDone: 20
 --- !u!95 &192069218025189213
 Animator:
   serializedVersion: 5
