@@ -2455,23 +2455,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2115168114405734004, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    - target: {fileID: 1621912660066042276, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
-      propertyPath: m_text
-      value: 'You Died
-
-
-'
+      propertyPath: m_fontColor.b
+      value: 0.21079999
       objectReference: {fileID: 0}
-    - target: {fileID: 2115168114405734004, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    - target: {fileID: 1621912660066042276, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
-      propertyPath: m_fontSize
-      value: 36
+      propertyPath: m_fontColor.g
+      value: 0.21079999
       objectReference: {fileID: 0}
-    - target: {fileID: 2115168114405734004, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    - target: {fileID: 1621912660066042276, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
+      propertyPath: m_fontColor.r
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621912660066042276, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281742911
       objectReference: {fileID: 0}
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
@@ -2523,6 +2525,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5575700621306132876, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.2125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575700621306132876, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.2125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575700621306132876, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575700621306132876, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4281742912
+      objectReference: {fileID: 0}
     - target: {fileID: 8579315577332568655, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_Name
@@ -2540,6 +2562,6 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 8226334774949479430}
+  - {fileID: 1682352476}
   - {fileID: 730951291}
   - {fileID: 1701772464}
-  - {fileID: 1682352476}
