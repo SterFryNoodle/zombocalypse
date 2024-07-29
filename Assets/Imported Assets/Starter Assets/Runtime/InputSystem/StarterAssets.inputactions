@@ -48,7 +48,7 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -230,8 +230,8 @@
                 },
                 {
                     "name": "",
-                    "id": "f478b63e-88e4-4524-8cab-b84a80c59920",
-                    "path": "Esc",
+                    "id": "5fe36e56-c7a7-435e-a402-98cdc587bab3",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",

@@ -12,7 +12,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
-		public bool cursorLock;
+		public bool cursorUnlock;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -74,17 +74,20 @@ namespace StarterAssets
 
 		public void ToggleCursorLockInput(bool newCursorState)
 		{
-			cursorLock = newCursorState;
+			cursorUnlock = newCursorState;			
 		}
 		
 		private void OnApplicationFocus(bool hasFocus)
-		{
-            SetCursorState(cursorLocked);
+		{            
+			if(!cursorUnlock)
+			{
+                SetCursorState(cursorLocked);
+            }			
         }
 
 		private void SetCursorState(bool newState)
 		{							
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;			
 		}
 	}
 	
