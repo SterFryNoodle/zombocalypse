@@ -1542,6 +1542,7 @@ GameObject:
   - component: {fileID: 2384139056011455258}
   - component: {fileID: 3920518260311385247}
   - component: {fileID: 1898901782292907709}
+  - component: {fileID: 4751058035309737187}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1657,7 +1658,6 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   jump: 0
   sprint: 0
-  cursorUnlock: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -1773,6 +1773,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: 100
+--- !u!114 &4751058035309737187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7bc905be4d369748be7098f049cf4f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 7227811224467265947}
 --- !u!1 &8626779065775183136
 GameObject:
   m_ObjectHideFlags: 0

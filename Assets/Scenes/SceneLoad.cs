@@ -9,6 +9,9 @@ public class SceneLoad : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked; //Re-locks cursor from center of screen.
+        Cursor.visible = false; //Hides cursor from screen.
     }
 
     public void QuitGame()
