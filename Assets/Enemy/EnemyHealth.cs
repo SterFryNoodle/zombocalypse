@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int amtOfDamage)
     {
+        BroadcastMessage("OnDamageTaken"); //Broadcast function in EnemyAI whenever the enemy takes damage.
         hitPoints -= amtOfDamage;
 
         if (hitPoints <= 0)

@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
     }
-        
+
     void Update()
     {
         SetEnemyRange();
@@ -26,9 +26,9 @@ public class EnemyAI : MonoBehaviour
     void SetEnemyRange()
     {
         distanceToTarget = Vector3.Distance(enemyTarget.position, transform.position); //Set variable to distance between player & enemy.
-        
+
         if (isProvoked) //Once provoked, call function.
-        {            
+        {
             EngageTarget();
         }
         else if (distanceToTarget <= chaseRange)
@@ -37,10 +37,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void OnDrawGizmosSelected() //Creates visual representation of enemy range.
+    public void OnDamageTaken()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, chaseRange);        
+        isProvoked = true;
     }
 
     void EngageTarget()
@@ -76,5 +75,11 @@ public class EnemyAI : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z)); //Sets variable to be the new rotation based on direction vector.
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed); //Sets enemy rotation to interpolate from current rotation transform
                                                                                                                  //to the new lookRotation @ a set speed.
+    }
+
+    void OnDrawGizmosSelected() //Creates visual representation of enemy range.
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
