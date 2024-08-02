@@ -6,14 +6,19 @@ using StarterAssets;
 
 public class PlayerZoom : MonoBehaviour
 {
-    [SerializeField] CinemachineVirtualCamera cameraZoom;
-    [SerializeField] FirstPersonController mouseSensitivity;
+    [SerializeField] CinemachineVirtualCamera cameraZoom;    
     [SerializeField] float zoomIn = 20f;
     [SerializeField] float zoomOut = 60f;
     [SerializeField] float increaseSensitivity = 2f;
     [SerializeField] float decreaseSensitivity = 0.5f;
 
-    bool zoomInToggle = false;    
+    bool zoomInToggle = false;
+    FirstPersonController mouseSensitivity;
+    void Start()
+    {
+        mouseSensitivity = GetComponent<FirstPersonController>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(1)) // decreases FOV & rotation speed.
