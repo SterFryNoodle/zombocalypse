@@ -85,7 +85,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -700,8 +700,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   CinemachineCameraTarget: {fileID: 3965094143915614962}
-  TopClamp: 89
-  BottomClamp: -89
+  TopClamp: 44
+  BottomClamp: -44
 --- !u!114 &8702883301729224009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,8 +863,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraZoom: {fileID: 2390625043079373362}
+  mouseSensitivity: {fileID: 4784323143515067157}
   zoomIn: 20
   zoomOut: 60
+  increaseSensitivity: 2
+  decreaseSensitivity: 0.5
 --- !u!114 &4751058035309737187
 MonoBehaviour:
   m_ObjectHideFlags: 0
