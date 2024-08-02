@@ -619,8 +619,8 @@ GameObject:
   - component: {fileID: 2384139056011455258}
   - component: {fileID: 3920518260311385247}
   - component: {fileID: 1898901782292907709}
+  - component: {fileID: 3838162319465343665}
   - component: {fileID: 4751058035309737187}
-  - component: {fileID: 8255076978553217631}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -850,6 +850,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHP: 100
+--- !u!114 &3838162319465343665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69896a01f9a741341a235a8955a3ec6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraZoom: {fileID: 2390625043079373362}
+  zoomIn: 20
+  zoomOut: 60
 --- !u!114 &4751058035309737187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -863,21 +878,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 0}
---- !u!114 &8255076978553217631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8579315577332568655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69896a01f9a741341a235a8955a3ec6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraZoom: {fileID: 6906823239926295185}
-  zoomIn: 0
-  zoomOut: 0
 --- !u!1001 &5602101212688686805
 PrefabInstance:
   m_ObjectHideFlags: 0

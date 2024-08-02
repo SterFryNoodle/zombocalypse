@@ -2070,7 +2070,7 @@ PrefabInstance:
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.6039133
+      value: 3.4539044
       objectReference: {fileID: 0}
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
@@ -2080,17 +2080,17 @@ PrefabInstance:
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.01
+      value: -40.34
       objectReference: {fileID: 0}
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: -0.045058
       objectReference: {fileID: 0}
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.8
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 8111781018561290000, guid: 8a7437817844dce4894b049de73b75f2,
         type: 3}
@@ -4729,6 +4729,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1716788090}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1768191540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2390625043079373362, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8226334774949479430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1796557944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7324705577624711914, guid: 9eb847ab97b24024588682c8601254cf,
@@ -5896,11 +5908,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2390625043079373362, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    - target: {fileID: 3838162319465343665, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
-      propertyPath: m_Lens.FieldOfView
-      value: 60
-      objectReference: {fileID: 0}
+      propertyPath: cameraZoom
+      value: 
+      objectReference: {fileID: 1768191540}
     - target: {fileID: 4751058035309737187, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: gameOverScreen
@@ -5955,11 +5967,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6906823239926295185, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: field of view
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8579315577332568655, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
