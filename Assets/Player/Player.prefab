@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 2116995438500334417}
   - component: {fileID: 4217026676497825691}
   - component: {fileID: 4010247162871563629}
+  - component: {fileID: 557109828492508211}
   m_Layer: 0
   m_Name: assault4
   m_TagString: Untagged
@@ -378,6 +379,19 @@ MonoBehaviour:
   weaponDamage: 10
   muzzleFlash: {fileID: 938641807555125511}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
+--- !u!114 &557109828492508211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2415370977359699534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754317a6d1ca3a74fbafc10a09e37228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmt: 15
 --- !u!1 &3965094143915614962
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,7 +877,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraZoom: {fileID: 2390625043079373362}
-  mouseSensitivity: {fileID: 4784323143515067157}
   zoomIn: 20
   zoomOut: 60
   increaseSensitivity: 2

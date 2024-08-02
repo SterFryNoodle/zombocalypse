@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -11,19 +12,31 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitFX;
 
     EnemyHealth target;
+    Ammo ammoSlot;
     float bulletImpactLength = .5f;
+
+    void Start()
+    {
+        ammoSlot = GetComponent<Ammo>();
+    }
+
     void Update()
-    {        
-        if (Input.GetButtonDown("Fire1"))
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Shoot();
+            Shoot();          
         }
     }
 
     void Shoot()
     {
-        PlayMuzzleFX();
-        ProcessRaycast();
+        ammoSlot.ReduceAmmoAmount();
+
+        if (ammoSlot.AmmoCount() > 0)
+        {
+            PlayMuzzleFX();
+            ProcessRaycast();
+        }        
     }
 
     void ProcessRaycast()
