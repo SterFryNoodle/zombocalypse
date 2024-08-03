@@ -8,7 +8,7 @@ public class Ammo : MonoBehaviour
     
     public void ReduceAmmoAmount() 
     {
-        if (ammoAmt > 0)
+        if (ammoAmt >= 0)
         {
             ammoAmt--;
         }               
