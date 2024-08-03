@@ -30,13 +30,13 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        ammoSlot.ReduceAmmoAmount();
-
-        if (ammoSlot.AmmoCount() >= 0)
+        if (ammoSlot.AmmoCount() > 0)
         {
             PlayMuzzleFX();
             ProcessRaycast();
-        }        
+        }
+
+        ammoSlot.ReduceAmmoAmount();
     }
 
     void ProcessRaycast()

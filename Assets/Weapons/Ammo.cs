@@ -8,7 +8,7 @@ public class Ammo : MonoBehaviour
     
     public void ReduceAmmoAmount() 
     {
-        if (ammoAmt >= 0)
+        if (ammoAmt > 0)
         {
             ammoAmt--;
         }               
@@ -16,7 +16,7 @@ public class Ammo : MonoBehaviour
 
     public int AmmoCount()
     {
-        Debug.Log("There is " + ammoAmt + " bullets left");
+        Debug.Log("There is " + (ammoAmt - 1) + " bullets left"); //Weird bug where ammo reduces below 0 b/c it doesn't count the first bullet.
         return ammoAmt;
     }
 }
