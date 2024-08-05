@@ -14,29 +14,36 @@ public class Weapon : MonoBehaviour
     EnemyHealth target;
     Ammo ammoSlot;
     float bulletImpactLength = .5f;
+    float gunBlastDelay = 1f;
+    bool canShoot = true;
 
     void Start()
     {
-        ammoSlot = GetComponent<Ammo>();
+        ammoSlot = GetComponent<Ammo>();        
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
         {
-            Shoot();          
+            StartCoroutine(Shoot());          
         }
-    }
+    }    
 
-    void Shoot()
+    IEnumerator Shoot()
     {
-        if (ammoSlot.AmmoCount() > 0)
+        canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
+
+        if (ammoSlot.AmmoCount() > 0) //Prevents player from being able to shoot when ammo reaches 0.
         {
             PlayMuzzleFX();
             ProcessRaycast();
         }
 
         ammoSlot.ReduceAmmoAmount();
+
+        yield return new WaitForSeconds(gunBlastDelay);
+        canShoot = true; //Resets bool value.
     }
 
     void ProcessRaycast()
