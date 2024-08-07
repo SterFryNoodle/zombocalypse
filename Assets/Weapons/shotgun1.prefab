@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8671411084515213006
 Transform:
   m_ObjectHideFlags: 0
@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  maxDistance: 100
-  weaponDamage: 10
+  maxDistance: 15
+  weaponDamage: 50
+  gunBlastDelay: 2
   muzzleFlash: {fileID: 5739878419565036325}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!114 &9031152413066196942

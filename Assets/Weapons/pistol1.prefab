@@ -99,8 +99,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  maxDistance: 100
-  weaponDamage: 10
+  maxDistance: 30
+  weaponDamage: 25
+  gunBlastDelay: 1.25
   muzzleFlash: {fileID: 491376754570928745}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!114 &2841269849013086890

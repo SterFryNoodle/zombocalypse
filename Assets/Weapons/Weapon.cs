@@ -32,6 +32,12 @@ public class Weapon : MonoBehaviour
         }
     }    
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, maxDistance);
+    }
+
     IEnumerator Shoot()
     {
         canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
