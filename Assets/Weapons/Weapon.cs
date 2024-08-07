@@ -6,15 +6,17 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
+    [Header("Weapon settings: ")]
     [SerializeField] float maxDistance = 100f;
     [SerializeField] int weaponDamage = 10;
+    [SerializeField] float gunBlastDelay = 1f;
+    [Header("Weapon effects: ")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitFX;
 
     EnemyHealth target;
     Ammo ammoSlot;
     float bulletImpactLength = .5f;
-    float gunBlastDelay = 1f;
     bool canShoot = true;
 
     void Start()
