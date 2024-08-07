@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6257141309027001456}
+  - component: {fileID: 8426551871652403360}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -34,6 +35,20 @@ Transform:
   - {fileID: 3262891725392767743}
   m_Father: {fileID: 5082510195230406267}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8426551871652403360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987764451880749208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64882012dcaf7f84fa7c17088207afe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
+  weapons: []
 --- !u!1 &1261612601222473384
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +808,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: pistol1
       objectReference: {fileID: 0}
+    - target: {fileID: 4958724749664560666, guid: da5405a6e32505040b24afe92960c287,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5231700827475095500, guid: da5405a6e32505040b24afe92960c287,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -848,6 +868,11 @@ PrefabInstance:
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 6906823239926295185}
+    - target: {fileID: 8611837247289406393, guid: da5405a6e32505040b24afe92960c287,
+        type: 3}
+      propertyPath: maxDistance
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -867,6 +892,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6257141309027001456}
     m_Modifications:
+    - target: {fileID: 4936825440778355748, guid: 134cf56e77ab0a649a36c0481542499f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.43
+      objectReference: {fileID: 0}
     - target: {fileID: 5727944078664639887, guid: 134cf56e77ab0a649a36c0481542499f,
         type: 3}
       propertyPath: FPCamera
@@ -876,6 +906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: shotgun1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582647388379025125, guid: 134cf56e77ab0a649a36c0481542499f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8671411084515213006, guid: 134cf56e77ab0a649a36c0481542499f,
         type: 3}
