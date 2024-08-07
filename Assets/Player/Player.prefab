@@ -793,11 +793,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: pistol1
       objectReference: {fileID: 0}
-    - target: {fileID: 4958724749664560666, guid: da5405a6e32505040b24afe92960c287,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5231700827475095500, guid: da5405a6e32505040b24afe92960c287,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -951,11 +946,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6257141309027001456}
     m_Modifications:
-    - target: {fileID: 2263898224721668159, guid: 162c3b700ddc3dc4ebabee40858b4223,
-        type: 3}
-      propertyPath: m_Name
-      value: Muzzle Flash FX Rifle
-      objectReference: {fileID: 0}
     - target: {fileID: 4723980542313660385, guid: 162c3b700ddc3dc4ebabee40858b4223,
         type: 3}
       propertyPath: FPCamera
@@ -965,11 +955,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: assault4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6317616590776706242, guid: 162c3b700ddc3dc4ebabee40858b4223,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6694458449313169016, guid: 162c3b700ddc3dc4ebabee40858b4223,
         type: 3}

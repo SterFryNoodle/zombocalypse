@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6694458449313169016
 Transform:
   m_ObjectHideFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   FPCamera: {fileID: 0}
   maxDistance: 50
   weaponDamage: 10
-  gunBlastDelay: 0.5
+  gunBlastDelay: 0.1
   muzzleFlash: {fileID: 8876322231033748363}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!114 &8183869166376224447
@@ -128,7 +128,7 @@ PrefabInstance:
     - target: {fileID: 2665537129781136486, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
       propertyPath: m_Name
-      value: Muzzle Flash FX
+      value: Muzzle Flash FX Rifle
       objectReference: {fileID: 0}
     - target: {fileID: 4663495689710305234, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
