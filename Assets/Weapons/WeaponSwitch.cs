@@ -15,7 +15,41 @@ public class WeaponSwitch : MonoBehaviour
     
     void Update()
     {
-        
+        int previousWeapon = currentWeapon;
+
+        ProcessKeyInput();
+        ProcessMouseScroll();
+
+        if (previousWeapon != currentWeapon) //Sets new weapon selected to be the active.
+        {
+            SetWeaponActive();
+        }
+    }
+
+    void ProcessMouseScroll()
+    {
+        if (Input.mouseScrollDelta.y > 0)
+        {
+            //set current weapon to new one.
+        }
+    }
+
+    void ProcessKeyInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            currentWeapon = 0;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            currentWeapon = 1;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            currentWeapon = 2;
+        }
     }
 
     void SetWeaponActive()
