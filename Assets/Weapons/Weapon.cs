@@ -16,16 +16,23 @@ public class Weapon : MonoBehaviour
 
     EnemyHealth target;
     Ammo ammoSlot;
+    WeaponSwitch activeWeapon;
     float bulletImpactLength = .5f;
     bool canShoot = true;
 
+    void OnEnable()
+    {
+        
+    }
+
     void Start()
     {
-        ammoSlot = GetComponent<Ammo>();        
+        ammoSlot = GetComponent<Ammo>();      
+        activeWeapon = GetComponentInParent<WeaponSwitch>();
     }
 
     void Update()
-    {
+    {        
         if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
         {
             StartCoroutine(Shoot());          
@@ -49,6 +56,8 @@ public class Weapon : MonoBehaviour
         }
 
         ammoSlot.ReduceAmmoAmount();
+        
+        //Fix bug where canShoot never resets if player switches weapon before delay ends.
 
         yield return new WaitForSeconds(gunBlastDelay);
         canShoot = true; //Resets bool value.
