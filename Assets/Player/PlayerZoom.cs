@@ -25,19 +25,29 @@ public class PlayerZoom : MonoBehaviour
         {
             if (zoomInToggle == false)
             {
-                zoomInToggle = true;
-                cameraZoom.m_Lens.FieldOfView = zoomIn;
-                mouseSensitivity.RotationSpeed = decreaseSensitivity;
-            }            
+                ZoomIn();
+            }
         }
         else if (Input.GetMouseButtonUp(1))
         {        
             if (zoomInToggle == true) // defaults FOV & player rotation speed.
             {
-                zoomInToggle = false;
-                cameraZoom.m_Lens.FieldOfView = zoomOut;
-                mouseSensitivity.RotationSpeed = increaseSensitivity;
-            }            
+                ZoomOut();
+            }
         }
+    }   
+
+    void ZoomIn()
+    {
+        zoomInToggle = true;
+        cameraZoom.m_Lens.FieldOfView = zoomIn;
+        mouseSensitivity.RotationSpeed = decreaseSensitivity;
+    }
+
+    void ZoomOut()
+    {
+        zoomInToggle = false;
+        cameraZoom.m_Lens.FieldOfView = zoomOut;
+        mouseSensitivity.RotationSpeed = increaseSensitivity;
     }
 }
