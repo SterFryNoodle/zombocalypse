@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6798797996262380090}
   - component: {fileID: 2010036930168475967}
   - component: {fileID: 5727944078664639887}
-  - component: {fileID: 9031152413066196942}
   m_Layer: 0
   m_Name: shotgun1
   m_TagString: Untagged
@@ -104,19 +103,6 @@ MonoBehaviour:
   gunBlastDelay: 1.25
   muzzleFlash: {fileID: 5739878419565036325}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
---- !u!114 &9031152413066196942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7582647388379025125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 754317a6d1ca3a74fbafc10a09e37228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoAmt: 8
 --- !u!1001 &1085426462659820791
 PrefabInstance:
   m_ObjectHideFlags: 0

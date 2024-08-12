@@ -48,7 +48,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWeapon: 0
-  weapons: []
 --- !u!1 &1261612601222473384
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +534,8 @@ GameObject:
   - component: {fileID: 3920518260311385247}
   - component: {fileID: 1898901782292907709}
   - component: {fileID: 3838162319465343665}
+  - component: {fileID: 8687240090328546593}
+  - component: {fileID: 4467826252751345683}
   - component: {fileID: 4751058035309737187}
   m_Layer: 8
   m_Name: Player
@@ -782,6 +783,32 @@ MonoBehaviour:
   zoomOut: 60
   increaseSensitivity: 2
   decreaseSensitivity: 0.5
+--- !u!114 &8687240090328546593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754317a6d1ca3a74fbafc10a09e37228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+--- !u!114 &4467826252751345683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754317a6d1ca3a74fbafc10a09e37228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
 --- !u!114 &4751058035309737187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +937,7 @@ PrefabInstance:
     - target: {fileID: 7582647388379025125, guid: 134cf56e77ab0a649a36c0481542499f,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8671411084515213006, guid: 134cf56e77ab0a649a36c0481542499f,
         type: 3}

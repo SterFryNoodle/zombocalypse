@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class WeaponSwitch : MonoBehaviour
 {
-    [SerializeField] public int currentWeapon = 0;
-    [SerializeField] List<WeaponSwitch> weapons;
-
+    [SerializeField] int currentWeapon = 0;
+    
     void Start()
     {
         SetWeaponActive();

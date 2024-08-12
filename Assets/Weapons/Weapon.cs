@@ -21,7 +21,7 @@ public class Weapon : MonoBehaviour
 
     void OnEnable()
     {
-        canShoot = true;             
+        canShoot = true;                
     }
 
     void Start()
@@ -29,37 +29,37 @@ public class Weapon : MonoBehaviour
         ammoSlot = GetComponent<Ammo>();        
     }
 
-    void Update()
-    {        
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
-        {
-            StartCoroutine(Shoot());          
-        }
-    }    
+    //void Update()
+    //{        
+    //    if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
+    //    {
+    //        StartCoroutine(Shoot());
+    //    }   
+    //}    
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, maxDistance);
-    }    
+    //void OnDrawGizmosSelected()
+    //{
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(transform.position, maxDistance);
+    //}    
 
-    IEnumerator Shoot()
-    {
-        canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
+    //IEnumerator Shoot()
+    //{
+    //    canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
         
-        if (ammoSlot.AmmoCount() > 0) //Prevents player from being able to shoot when ammo reaches 0.
-        {
-            PlayMuzzleFX();
-            ProcessRaycast();
-        }
+    //    if (ammoSlot.AmmoCount() > 0) //Prevents player from being able to shoot when ammo reaches 0.
+    //    {
+    //        PlayMuzzleFX();
+    //        ProcessRaycast();
+    //    }
 
-        ammoSlot.ReduceAmmoAmount();
+    //    ammoSlot.ReduceAmmoAmount();
 
-        //Fix bug where canShoot never resets if player switches weapon before delay ends.
+    //    //***Fix bug where canShoot never resets if player switches weapon before delay ends.***
         
-        yield return new WaitForSeconds(gunBlastDelay);
-        canShoot = true; //Resets bool value.
-    }
+    //    yield return new WaitForSeconds(gunBlastDelay);
+    //    canShoot = true; //Resets bool value.
+    //}
 
     void ProcessRaycast()
     {

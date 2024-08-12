@@ -4,19 +4,26 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    [SerializeField] int ammoAmt = 15;
+    [SerializeField] AmmoSlot[] slots;
     
-    public void ReduceAmmoAmount() 
+    [System.Serializable]
+    private class AmmoSlot //A private class within this class accessible only by Ammo class.
     {
-        if (ammoAmt > 0)
-        {
-            ammoAmt--;
-        }               
+        public int ammoAmount;
+        public AmmoType ammoType;
     }
 
-    public int AmmoCount()
-    {
-        Debug.Log("There is " + (ammoAmt - 1) + " bullets left"); //Weird bug where ammo reduces below 0 b/c it doesn't count the first bullet.
-        return ammoAmt;
-    }
+    //public void ReduceAmmoAmount() 
+    //{
+    //    if (ammoAmt > 0)
+    //    {
+    //        ammoAmt--;
+    //    }               
+    //}
+
+    //public int AmmoCount()
+    //{
+    //    Debug.Log("There is " + (ammoAmt) + " bullets left"); //Weird bug where ammo reduces below 0 b/c it doesn't count the first bullet.
+    //    return ammoAmt;
+    //}
 }

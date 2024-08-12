@@ -5911,10 +5911,35 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4334131267211696852, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: slots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: slots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: slots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: slots.Array.data[0].ammoAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: slots.Array.data[1].ammoAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467826252751345683, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: slots.Array.data[2].ammoAmount
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4751058035309737187, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
@@ -5969,11 +5994,6 @@ PrefabInstance:
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8426551871652403360, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: currentWeapon
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8579315577332568655, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
