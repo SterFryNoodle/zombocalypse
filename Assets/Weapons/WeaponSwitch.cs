@@ -28,9 +28,24 @@ public class WeaponSwitch : MonoBehaviour
 
     void ProcessMouseScroll()
     {
-        if (Input.mouseScrollDelta.y > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            //set current weapon to new one.
+            currentWeapon++;
+
+            if (currentWeapon > transform.childCount - 1) //Checks if currentWeapon index is greater than # of weapons.
+            {
+                currentWeapon = 0; //Resets the index back to first one if it goes over.
+            }            
+        }
+
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0) //Does same thing but opposite direction of mouse scroll.
+        {
+            currentWeapon--;
+
+            if (currentWeapon < 0)
+            {
+                currentWeapon = transform.childCount - 1;
+            }            
         }
     }
 
