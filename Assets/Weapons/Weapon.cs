@@ -15,20 +15,18 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitFX;
 
     EnemyHealth target;
-    Ammo ammoSlot;
-    WeaponSwitch activeWeapon;
+    Ammo ammoSlot;    
     float bulletImpactLength = .5f;
     bool canShoot = true;
 
     void OnEnable()
     {
-        
+        canShoot = true;             
     }
 
     void Start()
     {
-        ammoSlot = GetComponent<Ammo>();      
-        activeWeapon = GetComponentInParent<WeaponSwitch>();
+        ammoSlot = GetComponent<Ammo>();        
     }
 
     void Update()
@@ -43,12 +41,12 @@ public class Weapon : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, maxDistance);
-    }
+    }    
 
     IEnumerator Shoot()
     {
         canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
-
+        
         if (ammoSlot.AmmoCount() > 0) //Prevents player from being able to shoot when ammo reaches 0.
         {
             PlayMuzzleFX();
@@ -56,9 +54,9 @@ public class Weapon : MonoBehaviour
         }
 
         ammoSlot.ReduceAmmoAmount();
-        
-        //Fix bug where canShoot never resets if player switches weapon before delay ends.
 
+        //Fix bug where canShoot never resets if player switches weapon before delay ends.
+        
         yield return new WaitForSeconds(gunBlastDelay);
         canShoot = true; //Resets bool value.
     }
