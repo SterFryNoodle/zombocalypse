@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float maxDistance = 100f;
     [SerializeField] int weaponDamage = 10;
     [SerializeField] float gunBlastDelay = 1f;
+    [SerializeField] AmmoType ammoType;        
     [Header("Weapon effects: ")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitFX;
@@ -26,40 +27,40 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-        ammoSlot = GetComponent<Ammo>();        
+        ammoSlot = GetComponentInParent<Ammo>();        
     }
 
-    //void Update()
-    //{        
-    //    if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
-    //    {
-    //        StartCoroutine(Shoot());
-    //    }   
-    //}    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
+        {
+            StartCoroutine(Shoot());
+        }
+    }
 
-    //void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawWireSphere(transform.position, maxDistance);
-    //}    
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, maxDistance);
+    }
 
-    //IEnumerator Shoot()
-    //{
-    //    canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
-        
-    //    if (ammoSlot.AmmoCount() > 0) //Prevents player from being able to shoot when ammo reaches 0.
-    //    {
-    //        PlayMuzzleFX();
-    //        ProcessRaycast();
-    //    }
+    IEnumerator Shoot()
+    {
+        canShoot = false; //Sets flag to prevent player from shooting before coroutine ends.
 
-    //    ammoSlot.ReduceAmmoAmount();
+        if (ammoSlot.AmmoCount(ammoType) > 0) //Prevents player from being able to shoot when ammo reaches 0.
+        {
+            PlayMuzzleFX();
+            ProcessRaycast();
+        }
 
-    //    //***Fix bug where canShoot never resets if player switches weapon before delay ends.***
-        
-    //    yield return new WaitForSeconds(gunBlastDelay);
-    //    canShoot = true; //Resets bool value.
-    //}
+        ammoSlot.ReduceAmmoAmount(ammoType);
+
+        //***Fix bug where canShoot never resets if player switches weapon before delay ends.***
+
+        yield return new WaitForSeconds(gunBlastDelay);
+        canShoot = true; //Resets bool value.
+    }
 
     void ProcessRaycast()
     {

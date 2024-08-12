@@ -101,6 +101,8 @@ MonoBehaviour:
   maxDistance: 50
   weaponDamage: 10
   gunBlastDelay: 0.1
+  ammoType: 0
+  ammoAmount: 20
   muzzleFlash: {fileID: 8876322231033748363}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!1001 &4293927799159530585

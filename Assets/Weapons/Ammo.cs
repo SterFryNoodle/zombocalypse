@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    [SerializeField] AmmoSlot[] slots;
+    [SerializeField] AmmoSlot[] ammoSlots;
     
     [System.Serializable]
     private class AmmoSlot //A private class within this class accessible only by Ammo class.
@@ -13,17 +13,28 @@ public class Ammo : MonoBehaviour
         public AmmoType ammoType;
     }
 
-    //public void ReduceAmmoAmount() 
-    //{
-    //    if (ammoAmt > 0)
-    //    {
-    //        ammoAmt--;
-    //    }               
-    //}
+    public void ReduceAmmoAmount(AmmoType typeOfAmmo) //Passes in variable from Ammoslot private class.
+    {
+        if (GetAmmoSlot(typeOfAmmo).ammoAmount > 0) //Utilizes the private function to access the ammoAmount variable of w/e weapon slot is being returned.
+        {
+            GetAmmoSlot(typeOfAmmo).ammoAmount--;
+        }
+    }
 
-    //public int AmmoCount()
-    //{
-    //    Debug.Log("There is " + (ammoAmt) + " bullets left"); //Weird bug where ammo reduces below 0 b/c it doesn't count the first bullet.
-    //    return ammoAmt;
-    //}
+    public int AmmoCount(AmmoType typeOfAmmo)
+    {
+        return GetAmmoSlot(typeOfAmmo).ammoAmount;
+    }
+
+    private AmmoSlot GetAmmoSlot(AmmoType typeOfAmmo)
+    {
+        foreach (AmmoSlot slot in ammoSlots) //Goes through each ammo slot on player & checks which type of ammo it is.
+        {
+            if (slot.ammoType == typeOfAmmo)
+            {
+                return slot;
+            }
+        }
+        return null;
+    }
 }
