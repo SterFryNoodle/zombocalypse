@@ -17,8 +17,13 @@ public class Ammo : MonoBehaviour
     {
         if (GetAmmoSlot(typeOfAmmo).ammoAmount > 0) //Utilizes the private function to access the ammoAmount variable of w/e weapon slot is being returned.
         {
-            GetAmmoSlot(typeOfAmmo).ammoAmount--;
+            GetAmmoSlot(typeOfAmmo).ammoAmount--; //Checks for type of ammo and interates down by 1.
         }
+    }
+
+    public void IncreaseAmmoAmount(AmmoType typeOfAmmo, int ammoAmount) //Passes in variable from Ammoslot private class.
+    {
+        GetAmmoSlot(typeOfAmmo).ammoAmount += ammoAmount; //Checks for type of ammo & adds to it.
     }
 
     public int AmmoCount(AmmoType typeOfAmmo)
@@ -28,11 +33,11 @@ public class Ammo : MonoBehaviour
 
     private AmmoSlot GetAmmoSlot(AmmoType typeOfAmmo)
     {
-        foreach (AmmoSlot slot in ammoSlots) //Goes through each ammo slot on player & checks which type of ammo it is.
+        foreach (AmmoSlot bulletSlot in ammoSlots) //Goes through each ammo slot on player & checks which type of ammo it is.
         {
-            if (slot.ammoType == typeOfAmmo)
+            if (bulletSlot.ammoType == typeOfAmmo)
             {
-                return slot;
+                return bulletSlot;
             }
         }
         return null;
