@@ -10,16 +10,24 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float rotationSpeed = 2f;
 
     NavMeshAgent agent;
+    EnemyHealth health;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();  
     }
 
     void Update()
     {
+        if (health.IsDead())
+        {
+            enabled = false; //Sets this script instance to be disabled when condition is true.
+            agent.enabled = false; //Sets navmeshAgent to be disabled.
+        }
+
         SetEnemyRange();
     }
 
@@ -61,7 +69,11 @@ public class EnemyAI : MonoBehaviour
     {        
         GetComponent<Animator>().SetBool("Attack", false); //Set animation transition states for chasing.
         GetComponent<Animator>().SetTrigger("Walk");
-        agent.SetDestination(enemyTarget.position); // Set navmesh agent to it's target position.
+
+        if(agent.enabled)
+        {
+            agent.SetDestination(enemyTarget.position); // Set navmesh agent to it's target position.
+        }        
     }
 
     void AttackTarget()
