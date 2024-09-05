@@ -2708,7 +2708,7 @@ GameObject:
   - component: {fileID: 1289311195}
   - component: {fileID: 1289311194}
   m_Layer: 0
-  m_Name: PolyShape
+  m_Name: Underground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3137,7 +3137,7 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
-  m_SelectedVertices: 040000000b000000
+  m_SelectedVertices: 
 --- !u!4 &1289311199
 Transform:
   m_ObjectHideFlags: 0
