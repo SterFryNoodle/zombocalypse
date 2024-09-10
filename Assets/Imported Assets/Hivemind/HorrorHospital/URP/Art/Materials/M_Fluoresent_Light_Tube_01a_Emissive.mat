@@ -100,7 +100,7 @@ Material:
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 0
-    - _EmissiveStrength: 40
+    - _EmissiveStrength: 25
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _Metallic: 1
@@ -149,7 +149,7 @@ Material:
     - _AlbedoTint: {r: 1, g: 1, b: 1, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveTint: {r: 1, g: 1, b: 1, a: 0}
+    - _EmissiveTint: {r: 2.0315561, g: 2.0315561, b: 2.0315561, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &641452184450237117
 MonoBehaviour:
