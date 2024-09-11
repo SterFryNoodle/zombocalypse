@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1782904897554887664}
   - component: {fileID: 5077317774787857588}
+  - component: {fileID: 2511173732852025095}
   - component: {fileID: 6118301100931315586}
   m_Layer: 0
   m_Name: Flashlight
@@ -44,10 +45,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8696667, b: 0.53999996, a: 1}
   m_Intensity: 55
   m_Range: 12
-  m_SpotAngle: 30
+  m_SpotAngle: 70
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -95,6 +96,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2511173732852025095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9117558763725295429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d432ac3f5404a8abc32d6015b2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6118301100931315586
 MonoBehaviour:
   m_ObjectHideFlags: 0
