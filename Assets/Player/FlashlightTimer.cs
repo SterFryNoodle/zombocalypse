@@ -6,8 +6,7 @@ public class FlashlightTimer : MonoBehaviour
 {
     [SerializeField] float lightDecay = .1f;
     [SerializeField] float angleDecay = 1f;
-    [SerializeField] float minAngle = 30f;
-
+    
     Light flashLight;
     void Start()
     {
@@ -23,7 +22,7 @@ public class FlashlightTimer : MonoBehaviour
 
     void DecreaseLightIntensity()
     {
-        if (lightDecay > 0)
+        if (flashLight.intensity > 0)
         {
             flashLight.intensity -= lightDecay * Time.deltaTime;            
         }        
@@ -31,7 +30,7 @@ public class FlashlightTimer : MonoBehaviour
 
     void DecreaseLightAngle()
     {
-        if (angleDecay >= minAngle)
+        if (flashLight.spotAngle >= flashLight.innerSpotAngle)
         {
             flashLight.spotAngle -= angleDecay * Time.deltaTime;
         }

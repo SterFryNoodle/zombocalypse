@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8671411084515213006
 Transform:
   m_ObjectHideFlags: 0
@@ -102,7 +102,6 @@ MonoBehaviour:
   weaponDamage: 50
   gunBlastDelay: 1.25
   ammoType: 2
-  ammoAmount: 10
   muzzleFlash: {fileID: 5739878419565036325}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!1001 &1085426462659820791
@@ -146,12 +145,12 @@ PrefabInstance:
     - target: {fileID: 5445719503005628627, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.523
       objectReference: {fileID: 0}
     - target: {fileID: 5445719503005628627, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.98
+      value: 3.068
       objectReference: {fileID: 0}
     - target: {fileID: 5445719503005628627, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}

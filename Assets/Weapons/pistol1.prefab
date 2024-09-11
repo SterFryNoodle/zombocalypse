@@ -102,7 +102,6 @@ MonoBehaviour:
   weaponDamage: 25
   gunBlastDelay: 0.5
   ammoType: 1
-  ammoAmount: 6
   muzzleFlash: {fileID: 491376754570928745}
   hitFX: {fileID: 5502635581763669824, guid: c37a113bfb492d9429ad4329427ffb55, type: 3}
 --- !u!1001 &5073771246574558651
@@ -162,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 5445719503005628627, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.848
+      value: 1.096
       objectReference: {fileID: 0}
     - target: {fileID: 5445719503005628627, guid: 60f63caf2e45d9946a0b3a97bdf67b92,
         type: 3}
