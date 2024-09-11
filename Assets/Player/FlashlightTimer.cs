@@ -8,6 +8,7 @@ public class FlashlightTimer : MonoBehaviour
     [SerializeField] float angleDecay = 1f;
     
     Light flashLight;
+    float maxIntensity = 120f;
     void Start()
     {
         flashLight = GetComponent<Light>();
@@ -20,7 +21,17 @@ public class FlashlightTimer : MonoBehaviour
         DecreaseLightAngle();
     }
 
-    void DecreaseLightIntensity()
+    public void RestoreLightAngle(float angleReplenish) //Passes in value to add back into flashlight angle.
+    {
+        flashLight.spotAngle = angleReplenish;
+    }
+
+    public void RestoreLightIntensity(float intensityReplenish) //Passes in value to add back into flashlight intensity.
+    {
+        flashLight.intensity += intensityReplenish;
+    }
+
+    void DecreaseLightIntensity() 
     {
         if (flashLight.intensity > 0)
         {
