@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class Weapon : MonoBehaviour
     [Header("Weapon effects: ")]
     [SerializeField] ParticleSystem muzzleFlash;
     [SerializeField] GameObject hitFX;
+    [Header("Ammo Display: ")]
+    [SerializeField] TextMeshProUGUI ammoDisplay;
 
     EnemyHealth target;
     Ammo ammoSlot;    
@@ -32,6 +35,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        DisplayAmmo();
         if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
         {
             StartCoroutine(Shoot());
@@ -42,6 +46,12 @@ public class Weapon : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, maxDistance);
+    }
+
+    void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.AmmoCount(ammoType);
+        ammoDisplay.text = "Ammo: " + currentAmmo.ToString();
     }
 
     IEnumerator Shoot()
