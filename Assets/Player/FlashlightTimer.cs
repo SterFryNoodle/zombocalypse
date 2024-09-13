@@ -7,8 +7,7 @@ public class FlashlightTimer : MonoBehaviour
     [SerializeField] float lightDecay = .1f;
     [SerializeField] float angleDecay = 1f;
     
-    Light flashLight;
-    float maxIntensity = 120f;
+    Light flashLight;    
     void Start()
     {
         flashLight = GetComponent<Light>();
