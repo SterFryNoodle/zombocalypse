@@ -11,8 +11,8 @@ public class BatteryPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GetComponentInChildren<FlashlightTimer>().RestoreLightAngle(flashlightSpotAngle);
-            GetComponentInChildren<FlashlightTimer>().RestoreLightIntensity(flashlightIntensity);
+            other.GetComponentInChildren<FlashlightTimer>().RestoreLightAngle(flashlightSpotAngle);
+            other.GetComponentInChildren<FlashlightTimer>().RestoreLightIntensity(flashlightIntensity);
             Destroy(gameObject);
             Debug.Log("Picked up Battery!");
         }        

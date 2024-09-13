@@ -972,7 +972,7 @@ PrefabInstance:
     - target: {fileID: 2511173732852025095, guid: 2a527b736002930419ede6bedc9ff91e,
         type: 3}
       propertyPath: angleDecay
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2511173732852025095, guid: 2a527b736002930419ede6bedc9ff91e,
         type: 3}
