@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9207085206492274349}
   - component: {fileID: 845213800904910572}
   - component: {fileID: 297416862498507152}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ammo Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 4495785327341233558}
   - component: {fileID: 925701924549582212}
   - component: {fileID: 5461835138035482539}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,13 +280,13 @@ GameObject:
   - component: {fileID: 1627009185620613826}
   - component: {fileID: 2268739539875706878}
   - component: {fileID: 6237780909841376229}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1627009185620613826
 Transform:
   m_ObjectHideFlags: 0
@@ -349,13 +349,13 @@ GameObject:
   - component: {fileID: 2364485388083167310}
   - component: {fileID: 6080480462413985558}
   - component: {fileID: 6042421428161320204}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7307953031100024464
 RectTransform:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 1817185085275034734}
   - component: {fileID: 3609446450387791856}
   - component: {fileID: 6468463038891405217}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Death Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 3368858945029904453}
   - component: {fileID: 4603446578597845668}
   - component: {fileID: 8746864944430206468}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,13 +666,13 @@ GameObject:
   - component: {fileID: 1638773066520819634}
   - component: {fileID: 6947340873195892833}
   - component: {fileID: 6235229602469629900}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ammo Amt Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3555039616717258819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 7761172914254444624}
   - component: {fileID: 6211077312494462630}
   - component: {fileID: 720242518618218585}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Maybe Later Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,13 +905,13 @@ GameObject:
   - component: {fileID: 6578906784281709534}
   - component: {fileID: 8856247318155115129}
   - component: {fileID: 8461840544391192547}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Gun Reticle Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4011948485494653153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1006,8 +1006,8 @@ GameObject:
   - component: {fileID: 1077202555397607819}
   - component: {fileID: 410332779547346104}
   - component: {fileID: 3856662316811993219}
-  m_Layer: 0
-  m_Name: Damaged UI
+  m_Layer: 5
+  m_Name: Static UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 3547800491757268149}
   - component: {fileID: 6323332555577249808}
   - component: {fileID: 2358107169206545692}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Damaged Screen Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1184,7 @@ GameObject:
   - component: {fileID: 5710998581606986716}
   - component: {fileID: 7587791436882181597}
   - component: {fileID: 5923691167267706109}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Reload Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 4624962968501414811}
   - component: {fileID: 7782730412499680063}
   - component: {fileID: 5916672274119612529}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Reload Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7934939837785218655}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}

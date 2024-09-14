@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class DamagedIndicator : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] Canvas takeDmgCanvas;
+    [SerializeField] float impactTimer = 0.3f;
+
     void Start()
     {
+        takeDmgCanvas.enabled = false;
+    }
         
+    public void ShowDamageUI()
+    {
+        StartCoroutine(ShowStatic());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ShowStatic()
     {
-        
+        takeDmgCanvas.enabled = true;
+        yield return new WaitForSeconds(impactTimer);
+        takeDmgCanvas.enabled = false;
     }
 }

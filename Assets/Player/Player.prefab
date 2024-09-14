@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 1898901782292907709}
   - component: {fileID: 3838162319465343665}
   - component: {fileID: 4467826252751345683}
+  - component: {fileID: 9147303292565498102}
   - component: {fileID: 4751058035309737187}
   m_Layer: 8
   m_Name: Player
@@ -809,6 +810,20 @@ MonoBehaviour:
     ammoType: 1
   - ammoAmount: 10
     ammoType: 2
+--- !u!114 &9147303292565498102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8579315577332568655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc7124133cf95046b7fc439df26ac5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeDmgCanvas: {fileID: 0}
+  impactTimer: 0.3
 --- !u!114 &4751058035309737187
 MonoBehaviour:
   m_ObjectHideFlags: 0
