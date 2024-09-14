@@ -18,9 +18,9 @@ public class DamagedIndicator : MonoBehaviour
     }
 
     IEnumerator ShowStatic()
-    {
-        takeDmgCanvas.enabled = true;
-        yield return new WaitForSeconds(impactTimer);
+    {        
+        takeDmgCanvas.enabled = true;        
+        yield return new WaitForSeconds(impactTimer);        
         takeDmgCanvas.enabled = false;
     }
 }
