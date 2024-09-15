@@ -13994,6 +13994,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3367731581588041207}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7730854265196044248
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9011294
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4335502
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -51.386
+      objectReference: {fileID: 0}
+    - target: {fileID: 5548952567221091474, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5662225649205049126, guid: 7a8fa47cabb592e49a9c29040889e505,
+        type: 3}
+      propertyPath: m_Name
+      value: Forest Sign
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a8fa47cabb592e49a9c29040889e505, type: 3}
 --- !u!1001 &8180847923346630038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14179,3 +14247,4 @@ SceneRoots:
   - {fileID: 2679671331799269178}
   - {fileID: 327348683}
   - {fileID: 1391728562}
+  - {fileID: 7730854265196044248}
