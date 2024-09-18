@@ -19,6 +19,6 @@ public class SpawnZombie : MonoBehaviour
     IEnumerator RunIntoDistance()
     {
         yield return new WaitForSeconds(spawnTimer);
-        Destroy(enemyObject);
+        enemyObject.SetActive(false);
     }
 }
