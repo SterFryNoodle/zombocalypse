@@ -12143,6 +12143,7 @@ GameObject:
   - component: {fileID: 927457557}
   - component: {fileID: 927457558}
   - component: {fileID: 927457560}
+  - component: {fileID: 927457561}
   m_Layer: 0
   m_Name: Trap_1
   m_TagString: Untagged
@@ -12200,6 +12201,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trapDoor: {fileID: 1262574525}
   trapDoorDelay: 6
+--- !u!114 &927457561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927457556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2deb0da6c4d85147977b0adf8bfd635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectAudioSource: {fileID: 367794220}
+  scaryMusic: {fileID: 8300000, guid: 6dd70821cd182b24688ced835e108768, type: 3}
 --- !u!1001 &930768717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33454,6 +33469,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 706167342470835406, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19999725
+      objectReference: {fileID: 0}
+    - target: {fileID: 706167342470835406, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000015795231
+      objectReference: {fileID: 0}
     - target: {fileID: 1901268935708946878, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: ammoDisplay
@@ -33472,17 +33497,17 @@ PrefabInstance:
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.7
+      value: 89.67
       objectReference: {fileID: 0}
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: 0.24000001
       objectReference: {fileID: 0}
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.9
+      value: 45.21
       objectReference: {fileID: 0}
     - target: {fileID: 5082510195230406267, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
