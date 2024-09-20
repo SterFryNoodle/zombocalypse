@@ -14,15 +14,16 @@ public class Weapon : MonoBehaviour
     [SerializeField] AmmoType ammoType;        
     [Header("Weapon effects: ")]
     [SerializeField] ParticleSystem muzzleFlash;
-    [SerializeField] GameObject hitFX;
+    [SerializeField] GameObject hitFX;    
     [Header("Ammo Display: ")]
     [SerializeField] TextMeshProUGUI ammoDisplay;
 
     EnemyHealth target;
-    Ammo ammoSlot;    
+    Ammo ammoSlot;
+    GameObject impactPt;
     float bulletImpactLength = .5f;
     bool canShoot = true;
-
+    
     void OnEnable()
     {
         canShoot = true;                
@@ -103,8 +104,11 @@ public class Weapon : MonoBehaviour
     }
 
     void CreateBulletImpact(RaycastHit bullet)
-    {
-        GameObject impactPt = Instantiate(hitFX, bullet.point, Quaternion.LookRotation(bullet.normal)); //Instantiate impact fx and have the rotation translated towards the normals of object it is on.
+    { 
+        impactPt = Instantiate(hitFX, bullet.point, Quaternion.LookRotation(bullet.normal)); //Instantiate impact fx and have the rotation translated towards the normals of object it is on.
+        
         Destroy(impactPt, bulletImpactLength);
     }
+
+    
 }

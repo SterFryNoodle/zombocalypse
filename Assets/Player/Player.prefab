@@ -77,7 +77,7 @@ Transform:
   m_GameObject: {fileID: 1261612601222473384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20000005, y: 2.75, z: -0.000000007450581}
+  m_LocalPosition: {x: 0.19999896, y: 2.75, z: 0.000002399087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -545,8 +545,6 @@ GameObject:
   - component: {fileID: 9147303292565498102}
   - component: {fileID: 4751058035309737187}
   - component: {fileID: 9209508349340058393}
-  - component: {fileID: 8171219793253400223}
-  - component: {fileID: 2502756865631367262}
   - component: {fileID: 2832955570929574120}
   m_Layer: 8
   m_Name: Player
@@ -854,40 +852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footStepsClip: {fileID: 8300000, guid: dd1af302b8902684d9381de1f2d3a5af, type: 3}
-  gunshotClip: {fileID: 8300000, guid: 44986793a7996bb488462f50cf7347ca, type: 3}
---- !u!114 &8171219793253400223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8579315577332568655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad31fe77de195c94eb74fc9e17ab3820, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &2502756865631367262
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8579315577332568655}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ae3a58833dd6fda44be0f3ea83ddcd3b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &2832955570929574120
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1307,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 6317616590776706242, guid: 162c3b700ddc3dc4ebabee40858b4223,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6694458449313169016, guid: 162c3b700ddc3dc4ebabee40858b4223,
         type: 3}
