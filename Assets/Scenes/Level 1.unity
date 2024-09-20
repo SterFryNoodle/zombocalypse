@@ -33454,51 +33454,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 706167342470835406, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.19999896
-      objectReference: {fileID: 0}
-    - target: {fileID: 706167342470835406, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000002399087
-      objectReference: {fileID: 0}
     - target: {fileID: 1901268935708946878, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: ammoDisplay
       value: 
       objectReference: {fileID: 371576606}
-    - target: {fileID: 2502756865631367262, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502756865631367262, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2502756865631367262, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2832955570929574120, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_Pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2832955570929574120, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: Priority
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 2832955570929574120, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 4010247162871563629, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: ammoDisplay
@@ -33574,18 +33534,7 @@ PrefabInstance:
       propertyPath: takeDmgCanvas
       value: 
       objectReference: {fileID: 371576607}
-    - target: {fileID: 9209508349340058393, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: footStepsClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6cd12af5979d0fa4f99102348bbbcaa8, type: 3}
-    - target: {fileID: 9209508349340058393, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
-        type: 3}
-      propertyPath: resetSoundDistance
-      value: 40
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2502756865631367262, guid: f2b73e19b5ab4a94abd3f31ce61bb17c, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

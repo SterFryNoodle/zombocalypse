@@ -14,13 +14,14 @@ public class Weapon : MonoBehaviour
     [SerializeField] AmmoType ammoType;        
     [Header("Weapon effects: ")]
     [SerializeField] ParticleSystem muzzleFlash;
+    [SerializeField] AudioClip muzzleSound;
     [SerializeField] GameObject hitFX;    
     [Header("Ammo Display: ")]
     [SerializeField] TextMeshProUGUI ammoDisplay;
 
     EnemyHealth target;
     Ammo ammoSlot;
-    GameObject impactPt;
+    AudioSource weaponSource;
     float bulletImpactLength = .5f;
     bool canShoot = true;
     
@@ -31,7 +32,8 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
-        ammoSlot = GetComponentInParent<Ammo>();        
+        ammoSlot = GetComponentInParent<Ammo>();
+        weaponSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -62,6 +64,7 @@ public class Weapon : MonoBehaviour
         if (ammoSlot.AmmoCount(ammoType) > 0) //Prevents player from being able to shoot when ammo reaches 0.
         {
             PlayMuzzleFX();
+            PlayGunshotSFX();
             ProcessRaycast();
         }
 
@@ -103,9 +106,14 @@ public class Weapon : MonoBehaviour
         muzzleFlash.Play(); //Plays the particle fx.
     }
 
+    void PlayGunshotSFX()
+    {
+        weaponSource.PlayOneShot(muzzleSound);
+    }
+
     void CreateBulletImpact(RaycastHit bullet)
     { 
-        impactPt = Instantiate(hitFX, bullet.point, Quaternion.LookRotation(bullet.normal)); //Instantiate impact fx and have the rotation translated towards the normals of object it is on.
+        GameObject impactPt = Instantiate(hitFX, bullet.point, Quaternion.LookRotation(bullet.normal)); //Instantiate impact fx and have the rotation translated towards the normals of object it is on.
         
         Destroy(impactPt, bulletImpactLength);
     }
