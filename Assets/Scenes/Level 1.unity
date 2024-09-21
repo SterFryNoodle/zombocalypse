@@ -5665,7 +5665,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.40313697, g: 0.4755523, b: 0.553, a: 1}
+  m_Color: {r: 0.2279149, g: 0.26774466, b: 0.312, a: 1}
   m_Intensity: 0.35
   m_Range: 10
   m_SpotAngle: 30
@@ -13673,7 +13673,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 129
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -21348,7 +21348,7 @@ PrefabInstance:
     - target: {fileID: 2528622834124527331, guid: abc00000000002856268563034982492,
         type: 3}
       propertyPath: m_Intensity
-      value: 100
+      value: 85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
