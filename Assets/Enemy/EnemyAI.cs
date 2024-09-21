@@ -8,7 +8,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float rotationSpeed = 2f;
     [SerializeField] Transform enemyTarget;
-        
+    [SerializeField] AudioClip attackSound, chaseSound;
+    
+    AudioSource audioSource;
     NavMeshAgent agent;
     EnemyHealth health;
     float distanceToTarget = Mathf.Infinity;
@@ -18,6 +20,7 @@ public class EnemyAI : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();  
+        audioSource = GetComponent<AudioSource>();
         //enemyTarget = FindObjectOfType<PlayerHealth>().transform;
     }
 
@@ -70,8 +73,8 @@ public class EnemyAI : MonoBehaviour
     {        
         GetComponent<Animator>().SetBool("Attack", false); //Set animation transition states for chasing.
         GetComponent<Animator>().SetTrigger("Walk");
-
-        if(agent.enabled)
+        
+        if (agent.enabled)
         {
             agent.SetDestination(enemyTarget.position); // Set navmesh agent to it's target position.
         }        
@@ -79,7 +82,7 @@ public class EnemyAI : MonoBehaviour
 
     void AttackTarget()
     {
-        GetComponent<Animator>().SetBool("Attack", true); //Set animation states for attacking.        
+        GetComponent<Animator>().SetBool("Attack", true); //Set animation states for attacking.
     }
 
     void FaceTarget()
@@ -94,5 +97,29 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    void PlayChaseSFX()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = chaseSound;
+            audioSource.Play();
+        }        
+    }
+
+    void PlayAttackSFX()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.clip = attackSound;
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+            audioSource.clip = attackSound;
+            audioSource.Play();
+        }
     }
 }
