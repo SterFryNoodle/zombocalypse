@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  deathSound: {fileID: 8300000, guid: 09691fc3060ac904cab09a8efd3a9c6b, type: 3}
 --- !u!95 &7895759898277084243
 Animator:
   serializedVersion: 5
