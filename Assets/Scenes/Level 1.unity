@@ -34903,6 +34903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8579315577332568655, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8901682732167333194, guid: f2b73e19b5ab4a94abd3f31ce61bb17c,
         type: 3}
       propertyPath: ammoDisplay
